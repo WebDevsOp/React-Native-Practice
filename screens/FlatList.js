@@ -12,8 +12,13 @@ const FlatListScreen = () => {
     return (
         <FlatList
             data={javascript_frameworks}
+            keyExtractor={(element) => (0 | Math.random() * 9e6).toString(36)}
             renderItem={({ item }) => {
-                console.log(item.name);
+                // console.log(item.name);
+                console.log(Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5));
+                return (
+                    <Text>{item.name}</Text>
+                )
             }}
         />
     )
