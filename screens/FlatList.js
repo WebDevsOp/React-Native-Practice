@@ -15,7 +15,7 @@ const FlatListScreen = () => {
             keyExtractor={(element) => (0 | Math.random() * 9e6).toString(36)}
             renderItem={({ item }) => {
                 // console.log(item.name);
-                console.log(Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5));
+                console.log((0 | Math.random() * 9e6).toString(36));
                 return (
                     <Text>{item.name}</Text>
                 )
