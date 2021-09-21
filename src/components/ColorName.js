@@ -20,7 +20,6 @@ const ColorName = ({ Color, state, setState }) => {
         title={`Decrease ${Color}`}
         onPress={() => {
           console.log(`${Color} : ${state}`);
-
           if (state >= 10) {
             setState((prevState) => prevState - 10);
           } else {
