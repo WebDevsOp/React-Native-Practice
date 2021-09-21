@@ -8,19 +8,9 @@ const RGBScreen = () => {
   const [blue, SetBlue] = useState(0);
   return (
     <View>
-      <ColorName Color="Red" state={SetRed} />
-      <ColorName
-        Color="Green"
-        More="More Green"
-        Less="Less Green"
-        state={SetGreen}
-      />
-      <ColorName
-        Color="Blue"
-        More="More Blue"
-        Less="Less Blue"
-        state={SetBlue}
-      />
+      <ColorName Color="Red" state={red} setState={SetRed} />
+      <ColorName Color="Green" state={green} setState={SetGreen} />
+      <ColorName Color="Blue" state={blue} setState={SetBlue} />
       <View
         style={{
           height: 100,
